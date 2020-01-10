@@ -24,7 +24,8 @@ h1 {
 	border-top-right-radius: 5px;
 }
 
-p {	font-family: 'Source Sans Pro', sans-serif;
+p {	
+	font-family: 'Source Sans Pro', sans-serif;
 	padding-left: 20px;
 }
 
@@ -62,7 +63,7 @@ p {	font-family: 'Source Sans Pro', sans-serif;
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropdown-button {background-color: #04E08B;}
 
-.calculate {
+#calculate {
   background-color: #04E08B;
   color: white;
   padding: 12px;

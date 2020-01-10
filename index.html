@@ -15,22 +15,22 @@
 		<p>How was the service?</p>
 			<div class="dropdown">
 			  <button class="dropdown-button">Choose an option</button>
-			  	<div class="dropdown-content">
-		  			<p>Outstanding</p>
-					<p>Good</p>
-					<p>OK</p>
-					<p>Bad</p>
-					<p>Terrible</p>
+			  	<div class="dropdown-content" disabled selected value="0">
+		  			<p id="option-value" value="0.2">Outstanding</p>
+					<p id="option-value" value="0.18">Good</p>
+					<p id="option-value" value="0.15">OK</p>
+					<p id="option-value" value="0.1">Bad</p>
+					<p id="option-value" value="0.05">Terrible</p>
 			  	</div>
 			</div>
 
 		<p>How many people are sharing the bill?</p>
 		<p><input id="nbpeople" type="text" placeholder="Number of People"> people.</p>
 
-		<button class="calculate">CALCULATE!</button>
+		<button id="calculate">CALCULATE!</button>
 
 	</div>
 
-
+	<script src="app.js"></script>
 </body>
 </html>
