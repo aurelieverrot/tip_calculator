@@ -13,24 +13,30 @@
 		<p>$ <input id="amount" type="text" placeholder="Bill Amount"></p>
 
 		<p>How was the service?</p>
-			<div class="dropdown">
-			  <button class="dropdown-button">Choose an option</button>
-			  	<div class="dropdown-content" disabled selected value="0">
-		  			<p id="option-value" value="0.2">Outstanding</p>
-					<p id="option-value" value="0.18">Good</p>
-					<p id="option-value" value="0.15">OK</p>
-					<p id="option-value" value="0.1">Bad</p>
-					<p id="option-value" value="0.05">Terrible</p>
-			  	</div>
+		<div class="dropdown-button"> <!-- outer div marks the area the dropdown will appear-->
+			<div class="dropdown-list"> <!-- inner div contains the dropdown list-->
+			  
+			  <!-- <button class="dropdown-button">Choose an option</button> -->
+
+			  	<select name="dropdown-options" id="dropdown-options">
+		  			<option value="0.2">Outstanding</option>
+					<option value="0.18">Good</option>
+					<option value="0.15">OK</option>
+					<option value="0.1">Bad</option>
+					<option value="0.05">Terrible</option>
+			  	</select>
 			</div>
+		</div>
 
 		<p>How many people are sharing the bill?</p>
 		<p><input id="nbpeople" type="text" placeholder="Number of People"> people.</p>
 
 		<button id="calculate">CALCULATE!</button>
 
-	</div>
+		<p id="tip-result"></p>
 
+	</div>
+	<p><div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></p>
 	<script src="app.js"></script>
 </body>
 </html>
